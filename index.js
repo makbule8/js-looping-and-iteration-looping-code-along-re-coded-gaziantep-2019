@@ -1,21 +1,22 @@
 // Code your solutions in this file
-function printBadges(badges) {
-  badges.forEach((name, i) => {
-    console.log(`Welcome ${name}! You are employee #${i + 1}.`)
-  })
-  return badges
-}
 
-function tailsNeverFails() {
-  tailsCount = 0
 
-  flip = Math.random()
-
-  while (flip >= 0.5) {
-    tailsCount ++
-    flip = Math.random()
+function writeCards (names, event){
+  const messages = [];
+  
+  for (let i = 0 ; i < names.length ; i++){
+    messages[i] = `Thank you, ${names[i]}, for the wonderful ${event} gift.`;
   }
-
-  return `You got ${tailsCount} tails in a row!`
+  
+  
+  return messages;
 }
-© 2019 GitHub, Inc.
+
+
+ function countdown(number){
+  number < 0 ? number *= -1 : number;
+  while (number >= 0 ){
+    console.log(number);
+    number--;
+  }
+}
